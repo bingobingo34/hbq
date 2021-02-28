@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.panel_right {
+  float: right;
+}
+.panel_right p{
+  float: left;
+}
+.media {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.media_left {
+  display: inline-block;
+  width: 150px;
+}
+
+.media_left .media-object {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.media-body {
+  height: 100px;
+  padding: 0px;
+}
+
+.media_body_left {
+  width: 60%;
+  float: left;
+}
+
+.media_body_center {
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media_body_right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.price {
+  color: red;
+}
+
+.del {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
+}

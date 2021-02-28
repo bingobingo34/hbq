@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../json/addlist.js"></script>
+</head>
+<body>
+    <script>
+        let ind =0;
+        let timer = setInterval(function(){
+            let d = data[ind];
+            add(d);
+            ind++;
+            if(ind == 60){
+                clearInterval(timer);
+                console.log(1);
+            }
+        },50)
+        // let d = data[56];
+        function add(d){
+        let goodsId = d.goodsId;
+       let categoryId =  d.categoryId*1;
+       let categoryName =  d.categoryName;
+       let couponDiscount =  d.couponDiscount*1;
+       let 	descTxt =  d.descTxt; 
+       let goodsImageUrl =  d.goodsImageUrl; 
+       let goodsName=  d.goodsName;
+       let goodsSign=  d.goodsSign; 
+       let goodsType=  d.goodsType; 
+       let lgstTxt=  d.lgstTxt; 
+       let mallName=  d.mallName;
+       let minGroupPrice=  d.minGroupPrice*1;
+       let optId = d.optId;
+       let salesTip=  d.salesTip;
+       let servTxt=  d.servTxt;
+       
+       $.ajax({
+          url:'../php/2.php',
+          type:'get',
+          data:{
+            goodsId:`${goodsId}`,
+            categoryId:`${categoryId}`,
+            categoryName:`${categoryName}`,
+            couponDiscount:couponDiscount,
+            descTxt:descTxt,
+            goodsImageUrl:goodsImageUrl,
+            goodsName:goodsName,
+            goodsSign:goodsSign,
+            goodsType:goodsType,
+            lgstTxt:lgstTxt,
+            mallName:mallName,
+            minGroupPrice:minGroupPrice,
+            optId:optId,
+            salesTip:`${salesTip}`,
+            servTxt:`${servTxt}`
+          },
+          success:function(res){
+              console.log(res);
+          }
+      })
+        }
+    </script>
+</body>
+</html>

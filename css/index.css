@@ -1,0 +1,231 @@
+@charset "UTF-8";
+#head_wrap {
+  width: 100%;
+  height: 82px;
+}
+
+#head_wrap .header {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+#head_wrap .header h1 {
+  width: 100px;
+  height: 82px;
+  float: left;
+  margin: 0;
+}
+
+#head_wrap .header h1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#head_wrap .header ul {
+  float: left;
+  margin-bottom: 0;
+}
+
+#head_wrap .header ul li {
+  width: 100px;
+  height: 82px;
+  line-height: 82px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 20px;
+  float: left;
+}
+
+#head_wrap .header ul li a {
+  display: block;
+  color: #fa1818;
+}
+
+#head_wrap .header span {
+  line-height: 82px;
+  float: right;
+  color: #fa1818;
+}
+
+#head_wrap .header span a {
+  color: #fa1818;
+}
+
+#nav_wrap {
+  width: 100%;
+  height: 40px;
+  background-color: #fa1818;
+}
+
+#nav_wrap .nav {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+#nav_wrap .nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nav_wrap .nav ul li {
+  width: 120px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+#nav_wrap .nav ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
+#banner_wrap {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+}
+
+#banner_wrap .banner {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner_wrap .banner ol {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+}
+
+#banner_wrap .banner ol li {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+  display: inline;
+  cursor: pointer;
+  background: #fcf2cf;
+  border: 1px solid orange;
+}
+
+#banner_wrap .banner ol .active {
+  color: #fff;
+  background: #fa1818;
+}
+
+#banner_wrap .banner ul {
+  width: 7200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#banner_wrap .banner ul li {
+  width: 1200px;
+  height: 100%;
+  float: left;
+}
+
+#banner_wrap .banner ul li img {
+  float: left;
+}
+
+#all_wrap {
+  width: 100%;
+  margin: 0;
+}
+
+#all_wrap .all {
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+#all_wrap .all h2 {
+  color: #fa1818;
+  margin: 0;
+}
+
+#all_wrap .all ul {
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+#all_wrap .all ul .list-item {
+  width: 260px;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 10px 10px;
+}
+
+#all_wrap .all ul .list-item .row {
+  margin: 0;
+}
+
+#all_wrap .all ul .list-item .row h3 {
+  text-overflow: ellipsis;
+  /*有些示例里需要定义该属性，实际可省略*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*规定超过两行的部分截断*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  /*在任何地方换行*/
+}
+
+#all_wrap .all ul .list-item .row .price {
+  font-size: 30px;
+  color: red;
+}
+
+#all_wrap .all ul .list-item .title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#all_wrap .all ul .list-item .title .breadcrumb {
+  height: 36px;
+  overflow: hidden;
+}
+
+#all_wrap .page {
+  height: 40px;
+  border: 1px solid skyblue;
+  width: 60%;
+  margin: auto;
+}
+
+#all_wrap .page p {
+  cursor: pointer;
+}
+
+#foot_wrap {
+  width: 100%;
+  height: 80px;
+  background-color: #fa1818;
+}
+
+#foot_wrap .foot {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#foot_wrap .foot span {
+  width: 500px;
+  height: 100%;
+  line-height: 80px;
+  color: #fff;
+}

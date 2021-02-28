@@ -1,0 +1,87 @@
+@charset "utf-8";
+body,
+html {
+    height: 100%;
+}
+
+a,
+article,
+aside,
+body,
+button,
+dd,
+details,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+img,
+input,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+select,
+table,
+tbody,
+td,
+textarea,
+th,
+tr,
+thead,
+tfoot,
+fieldset,
+legend,
+ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+a,u,ins{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+strong,b{
+    font-weight: normal;
+}
+a{
+     color: #333;
+    text-decoration: none;
+}
+.clear_fix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    clear: both
+}
+img {
+    display: block;
+    border:0;
+}

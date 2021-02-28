@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+nav,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.magnifier {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid black;
+  top: 122px;
+  left: 500px;
+  display: none;
+}
+
+.magnifier img {
+  display: block;
+  position: absolute;
+  width: 990px;
+  height: 990px;
+  z-index: 10;
+}
+
+.head {
+  width: 100%;
+  height: 110px;
+  background-color: white;
+}
+
+.head .head_center {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.head .head_center img {
+  display: block;
+  float: left;
+  width: 320px;
+  height: 55px;
+  margin: 24px 70px 0 0;
+}
+
+.head .head_center .head_btn {
+  width: 400px;
+  height: 40px;
+  float: left;
+  margin-top: 35px;
+  background-color: red;
+}
+
+.head .head_center .head_btn input {
+  float: left;
+  width: 328px;
+  height: 38px;
+  border: 0;
+  outline: none;
+  border: 1px solid red;
+}
+
+.head .head_center .head_btn button {
+  float: left;
+  width: 70px;
+  height: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+.head .head_center p {
+  float: right;
+}
+
+.head .head_center p button {
+  width: 50px;
+  height: 30px;
+  margin: 44px 20px;
+}
+
+.detail {
+  padding: 12px 0 8px 0;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.detail .detailTop {
+  width: 1200px;
+  display: flex;
+  min-height: 454px;
+}
+
+.detail .detailTop .dtLeft {
+  width: 330px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.detail .detailTop .dtLeft .smallimg {
+  position: relative;
+}
+
+.detail .detailTop .dtLeft .smallimg .mark {
+  width: 100px;
+  height: 100px;
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.detail .detailTop .dtLeft .smallimg img {
+  display: block;
+  width: 330px;
+  height: 330px;
+}
+
+.detail .detailTop .dtLeft .imgSmall {
+  width: 330px;
+  height: 96px;
+}
+
+.detail .detailTop .dtLeft .imgSmall .btnl,
+.detail .detailTop .dtLeft .imgSmall .btnr {
+  float: left;
+  height: 100%;
+  line-height: 96px;
+}
+
+.detail .detailTop .dtLeft .imgSmall .btnl .iconfont,
+.detail .detailTop .dtLeft .imgSmall .btnr .iconfont {
+  font-size: 30px;
+}
+
+.detail .detailTop .dtLeft .imgSmall .btnCenter {
+  width: 264px;
+  height: 100%;
+  display: flex;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.detail .detailTop .dtLeft .imgSmall .btnCenter nav {
+  display: flex;
+  position: absolute;
+}
+
+.detail .detailTop .dtLeft .imgSmall .btnCenter img {
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+}
+
+.detail .detailTop .dtRight {
+  width: 862px;
+  padding: 24px;
+  margin: 0 0 0 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.detail .detailTop .dtRight h5 {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.detail .detailTop .dtRight .dtR {
+  width: 700px;
+  height: 112px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  color: #666;
+  padding: 15px 18px 18px 18px;
+  box-sizing: border-box;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 {
+  float: left;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top {
+  display: flex;
+  margin-top: 2px;
+  align-items: center;
+  height: 22px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top .dp1 {
+  font-size: 13px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top .dp2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e3544c;
+  line-height: 20px;
+  margin: 0 7px 0 25px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top .dp3 {
+  margin-right: 7px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e3544c;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top .dp4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1top .dp5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 3px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1bottom {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1bottom .dm1 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  line-height: 14px;
+  margin-right: 28px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1bottom .dm2 {
+  padding: 0 3px;
+  height: 16px;
+  background: #e3544c;
+  border-radius: 1px 0 0 1px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 16px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1bottom .dm3 {
+  padding: 0 3px;
+  height: 16px;
+  border: 1px solid #e3544c;
+  font-size: 12px;
+  font-weight: 400;
+  color: #e3544c;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 14px;
+}
+
+.detail .detailTop .dtRight .dtR .dtR1 .dtR1bottom .dm4 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #e3544c;
+  line-height: 14px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.detail .detailTop .dtRight .dtR .dtR2 {
+  float: right;
+  width: 2px;
+  height: 44px;
+  margin-top: 17px;
+  background-color: #ededed;
+}
+
+.detail .detailTop .dtRight .dtR .dtR3 {
+  float: right;
+  height: 100%;
+  width: 120px;
+  text-align: center;
+}
+
+.detail .detailTop .dtRight .dtR .dtR3 div {
+  width: 100%;
+  height: 50%;
+  line-height: 40px;
+}
+
+.detail .detailTop .dtRight .size {
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+
+.detail .detailTop .dtRight .size .scolor {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.detail .detailTop .dtRight .size .scolor p {
+  width: 52px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  margin-right: 22px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+}
+
+.detail .detailTop .dtRight .size .scolor .sclist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 610px;
+}
+
+.detail .detailTop .dtRight .size .scolor .sclist span {
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  height: 28px;
+  font-size: 12px;
+  margin: 0 4px 8px 0;
+}
+
+.detail .detailTop .dtRight .size .ssize {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.detail .detailTop .dtRight .size .ssize p {
+  width: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-right: 14px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+}
+
+.detail .detailTop .dtRight .size .ssize .sslist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 610px;
+}
+
+.detail .detailTop .dtRight .size .ssize .sslist .act {
+  color: red;
+  border: 1px solid red;
+}
+
+.detail .detailTop .dtRight .size .ssize .sslist span {
+  height: 28px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 28px;
+  padding: 0 10px;
+  border: 1px solid black;
+  font-size: 12px;
+  margin: 0 4px 8px 0;
+}
+
+.detail .detailTop .dtRight .size .snum {
+  margin-bottom: 20px;
+  display: flex;
+  color: #666;
+}
+
+.detail .detailTop .dtRight .size .snum p {
+  width: 52px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-right: 22px;
+}
+
+.detail .detailTop .dtRight .size .snum .snumber {
+  display: flex;
+  text-align: center;
+}
+
+.detail .detailTop .dtRight .size .snum .snumber .reduce,
+.detail .detailTop .dtRight .size .snum .snumber .add {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.detail .detailTop .dtRight .size .snum .snumber .count {
+  width: 90px;
+  height: 26px;
+  line-height: 26px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.detail .detailTop .dtRight .buy {
+  margin-top: 80px;
+  display: flex;
+  text-align: center;
+  line-height: 34px;
+}
+
+.detail .detailTop .dtRight .buy .buy1,
+.detail .detailTop .dtRight .buy .buy2 {
+  cursor: pointer;
+  width: 200px;
+  height: 34px;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.detail .detailTop .dtRight .buy .buy1 {
+  margin-right: 15px;
+  color: #fff;
+  background: #ffa600;
+}
+
+.detail .detailTop .dtRight .buy .buy2 {
+  color: #fff;
+  background: red;
+}
+
+.detail .detailFoot {
+  width: 1200px;
+  min-height: 500px;
+  background-color: #fff;
+  margin-top: 8px;
+  padding: 20px 20px 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.detail .detailFoot .dFl {
+  width: 225px;
+  height: 145px;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+
+.detail .detailFoot .dFl .df1 {
+  width: 223px;
+  height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #f8f8f8;
+  line-height: 38px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.detail .detailFoot .dFl .df2 {
+  margin-top: 12px;
+}
+
+.detail .detailFoot .dFl .df2, .detail .detailFoot .dFl .df3, .detail .detailFoot .dFl .df4 {
+  padding-left: 15px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.detail .detailFoot .dFr {
+  width: 900px;
+  min-height: 500px;
+}
+
+.detail .detailFoot .dFr .head {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid #e8e8e8;
+  background-color: #f8f8f8;
+}
+
+.detail .detailFoot .dFr .head span {
+  position: relative;
+  height: 39px;
+  border-right: 1px solid #e8e8e8;
+  line-height: 40px;
+  color: #333;
+  font-size: 16px;
+  padding: 0 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.detail .detailFoot .dFr .head .curr::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #e3554c;
+}
+
+.detail .detailFoot .dFr .head .curr {
+  background-color: #fff;
+  color: #e3554c;
+}
+
+.detail .detailFoot .dFr .center {
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.detail .detailFoot .dFr .center .c1 {
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-size: 12px;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.detail .detailFoot .dFr .center img {
+  width: 790px;
+  display: block;
+  margin: 0 56px;
+}
+
+.foot {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  text-align: center;
+}
+
+.foot p:nth-child(0) {
+  height: 14px;
+  padding: 14px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.foot p:nth-child(2) {
+  font-size: 14px;
+  color: #666;
+}
